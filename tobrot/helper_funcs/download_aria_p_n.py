@@ -6,7 +6,10 @@ import aria2p
 import asyncio
 import configparser
 import os
-from pyrogram.errors import MessageNotModified
+from pyrogram.errors import (
+    MessageNotModified,
+    FloodWait
+)
 from tobrot import (
     LOGGER
 )
@@ -104,7 +107,7 @@ def add_torrent(aria_instance, torrent_file_path):
         else:
             return True, "" + download.gid + ""
     else:
-        return False, "**FAILED** \n" + str(e) + " \nPlease try other sources to get workable link"
+        return False, "**FAILED** \n\nPlease try other sources to get workable link"
 
 
 def add_url(aria_instance, text_url, c_file_name):
@@ -340,6 +343,8 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
         pass
     except MessageNotModified:
         pass
+    except FloodWait as e:
+        await asyncio.sleep(e.x)
     except RecursionError:
         file.remove(force=True)
         await event.edit(
