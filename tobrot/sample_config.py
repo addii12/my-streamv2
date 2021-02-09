@@ -101,5 +101,5 @@ class Config:
         int(x) for x in get_config(
             "SUDO_USERS",
             should_prompt=True
-        ).split()
+        )#.split()
     )
