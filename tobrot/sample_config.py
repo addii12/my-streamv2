@@ -62,7 +62,7 @@ class Config:
     ))
     EDIT_SLEEP_TIME_OUT = int(get_config(
         "EDIT_SLEEP_TIME_OUT",
-        1
+        10
     ))
     MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START = int(get_config(
         "MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START",
