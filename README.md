@@ -6,6 +6,8 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 ## installing
 
+<p><a href="https://github.com/MaxxRider/Leech-Pro/wiki/Deploy-To-Heroku"> <img src=https://img.shields.io/badge/Deploy%20Guide-blueviolet?style=for-the-badge&logo=heroku" width="200"</a></p>
+ 
 ### The Eas(iest) Way
 
 - Install Docker by following the [official docker docs](https://docs.docker.com/engine/install/debian/)
