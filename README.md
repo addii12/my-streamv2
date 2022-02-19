@@ -6,7 +6,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 ## installing
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/satyushree/URL-UPLOADER/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/addii12/my-streamv2)
  
 ### The Eas(iest) Way
 
